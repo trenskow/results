@@ -17,7 +17,7 @@ exports = module.exports = async (promises, options = {}) => {
 	await Promise.all(promises.map(async (promise) => {
 		await queue.add(async () => {
 			try {
-				resolved.push(await promise);
+				resolved.push(await new Promise.resolve(promise));
 			} catch (err) {
 				rejected.push(err);
 			}	
