@@ -12,7 +12,7 @@ npm install --save @trenskow/results
 ## Usage
 
 ````javascript
-const results = require('results');
+const results = require('@trenskow/results');
 ````
 
 ### Getting all Results
@@ -63,7 +63,7 @@ You can specify how many promises can be executed at once by using an option.
 const [resolved, rejected] = results(/* promises */, { simultaneously: 1 });
 ````
 
-The above example will make the promises execute one at the time. You can specify any arbitrary number, default is `0` (which means unlimited).
+The above example will make the promises execute one at the time (which also guarantees order). You can specify any arbitrary number, default is `0`, which is equal to unlimited.
 
 > This works for all three variants (resolved/rejected, resolved and rejected).
 
