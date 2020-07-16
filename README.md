@@ -42,7 +42,7 @@ const resolved = results.resolved([
 ### Getting Only Rejected Results
 
 ````javascript
-const rejected = results.resolved([
+const rejected = results.rejected([
 	Promise.resolve('a'),
 	Promise.reject(new Error('a')),
 	Promise.resolve('b'),
