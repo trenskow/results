@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/trenskow/results#readme",
   "dependencies": {
-    "puqeue": "^1.0.10"
+    "puqeue": "^1.0.11"
   },
   "devDependencies": {
     "chai": "^4.3.7",
