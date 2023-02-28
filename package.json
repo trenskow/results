@@ -4,7 +4,7 @@
   "description": "Executes an array of promises and returns their resolved or rejected results.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/index.js"
+    "test": "./node_modules/mocha/bin/_mocha test/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
-    "mocha": "^7.2.0"
+    "mocha": "^10.2.0"
   }
 }
