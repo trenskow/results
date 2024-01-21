@@ -3,6 +3,7 @@
   "version": "0.0.16",
   "description": "Executes an array of promises and returns their resolved or rejected results.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "./node_modules/mocha/bin/_mocha test/index.js"
   },

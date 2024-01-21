@@ -1,9 +1,6 @@
-'use strict';
+import Puqeue from 'puqeue';
 
-const
-	Puqeue = require('puqeue');
-
-exports = module.exports = async (promises, options = {}) => {
+let results = async (promises, options = {}) => {
 
 	if (!promises) return [[], []];
 
@@ -20,7 +17,7 @@ exports = module.exports = async (promises, options = {}) => {
 				resolved.push(await Promise.resolve(promise));
 			} catch (err) {
 				rejected.push(err);
-			}	
+			}
 		});
 	}));
 
@@ -28,10 +25,17 @@ exports = module.exports = async (promises, options = {}) => {
 
 };
 
-exports.resolved = async (promises, options) => {
-	return (await exports(promises, options))[0];
+const resolved = async (promises, options) => {
+	return (await results(promises, options))[0];
 };
 
-exports.rejected = async (promises, options) => {
-	return (await exports(promises, options))[1];
+const rejected = async (promises, options) => {
+	return (await results(promises, options))[1];
 };
+
+results.resolved = resolved;
+results.rejected = rejected;
+
+export default results;
+
+export { resolved, rejected };

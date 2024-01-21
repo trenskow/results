@@ -1,14 +1,9 @@
-'use strict';
+import { use as chaiUse, expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
 
-const
-	chai = require('chai'),
-	{ expect } = chai,
-	chaiAsPromised = require('chai-as-promised');
+import results from '../index.js';
 
-chai.use(chaiAsPromised);
-
-const
-	results = require('../');
+chaiUse(chaiAsPromised);
 
 describe('results', function() {
 	it ('should come back with resolved and rejected results separated.', () => {
