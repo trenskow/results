@@ -1,35 +1,39 @@
 {
-  "name": "@trenskow/results",
-  "version": "0.1.11",
-  "description": "Executes an array of promises and returns their resolved or rejected results.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/_mocha test/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trenskow/results.git"
-  },
-  "keywords": [
-    "promises",
-    "array",
-    "all",
-    "results",
-    "rejected"
-  ],
-  "author": "Kristian Trenskow <trenskow@me.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/trenskow/results/issues"
-  },
-  "homepage": "https://github.com/trenskow/results#readme",
-  "dependencies": {
-    "puqeue": "^1.1.7"
-  },
-  "devDependencies": {
-    "chai": "^5.1.1",
-    "chai-as-promised": "^8.0.0",
-    "mocha": "^10.7.3"
-  }
+	"name": "@trenskow/results",
+	"version": "0.1.11",
+	"description": "Executes an array of promises and returns their resolved or rejected results.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "./node_modules/mocha/bin/_mocha test/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/trenskow/results.git"
+	},
+	"keywords": [
+		"promises",
+		"array",
+		"all",
+		"results",
+		"rejected"
+	],
+	"author": "Kristian Trenskow <trenskow@me.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/trenskow/results/issues"
+	},
+	"homepage": "https://github.com/trenskow/results#readme",
+	"dependencies": {
+		"puqeue": "^1.1.7"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3.1.0",
+		"@eslint/js": "^9.13.0",
+		"chai": "^5.1.1",
+		"chai-as-promised": "^8.0.0",
+		"eslint": "^9.13.0",
+		"globals": "^15.11.0",
+		"mocha": "^10.7.3"
+	}
 }
