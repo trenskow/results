@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/trenskow/results#readme",
 	"dependencies": {
-		"puqeue": "^1.1.25"
+		"puqeue": "^1.1.26"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.3.3",
