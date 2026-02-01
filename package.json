@@ -1,6 +1,6 @@
 {
 	"name": "@trenskow/results",
-	"version": "0.1.51",
+	"version": "0.1.52",
 	"description": "Executes an array of promises and returns their resolved or rejected results.",
 	"main": "index.js",
 	"type": "module",
